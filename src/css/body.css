@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Caveat&family=Crimson+Text&family=Exo+2&family=Josefin+Sans&family=Kalam&family=Lexend&family=Piazzolla:wght@200;300;400;900&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Exo 2", sans-serif;
+}
+:root {
+  --main-color: rgb(248, 217, 44);
+}
+
+/* note section */
+.card__box {
+  display: flex;
+  justify-content: center;
+}
+
+.card__body {
+  width: 25rem;
+  height: 12rem;
+  box-shadow: 0px 0px 5px gray;
+}
+.card__input {
+  display: flex;
+  flex-direction: column;
+}
+.card__title__input {
+  height: 3rem;
+  margin-top: 1rem;
+  padding-left: 10px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  outline: none;
+}
+.card__note__input {
+  height: 6rem;
+  padding-left: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  overflow: hidden;
+}
+.button {
+  background-color: #fff;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  right: 10px;
+  top: 88%;
+  color: var(--main-color);
+  box-shadow: 0px 0px 5px gray;
+}
+.button:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+/* note save section */
+.card_note {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0px auto;
+}
+.notesave_box {
+  width: 18rem;
+  margin: 1rem;
+  margin-left: 2rem;
+  box-shadow: 0px 0px 5px gray;
+}
+h6 {
+  font-weight: bold;
+  font-size: 1rem;
+}
+.para {
+  font-size: 1rem;
+}
+.button2 {
+  background-color: #fff;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: none;
+  color: var(--main-color);
+  box-shadow: 0px 0px 5px gray;
+  margin-left: auto;
+  margin-bottom: 0.5rem;
+}
+.button2:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+@media screen and (max-width: 320px) {
+  .card__body {
+    width: 15rem;
+    height: 10rem;
+  }
+  .card__note__input {
+    height: 4rem;
+  }
+  .button {
+    width: 2rem;
+    height: 2rem;
+  }
+  .notesave_box {
+    margin: auto;
+    margin-top: 1rem;
+    width: 15rem;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  .card__body {
+    width: 20rem;
+    height: 12rem;
+  }
+  .card__note__input {
+    height: 6rem;
+  }
+  .button {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .notesave_box {
+    margin: auto;
+    margin-top: 1rem;
+    width: 18rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 600px) {
+  .card__body {
+    width: 20rem;
+    height: 12rem;
+  }
+  .card__note__input {
+    height: 6rem;
+  }
+  .button {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .notesave_box {
+    width: 18rem;
+    margin: auto;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 756px) {
+  .notesave_box {
+    margin-left: 2rem;
+    width: 13rem;
+    margin: auto;
+    margin-top: 1rem;
+  }
+}
